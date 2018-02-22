@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.roshaan.retrofitsample.ui.UsersListWithParameterActivity">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/firstName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toTopOf="@id/image1"
+            app:layout_constraintStart_toEndOf="@id/image1" />
+
+        <TextView
+            android:id="@+id/lastName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/image1"
+            app:layout_constraintTop_toBottomOf="@id/firstName1" />
+
+        <TextView
+            android:id="@+id/id1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/image1"
+            app:layout_constraintTop_toBottomOf="@id/lastName1" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image1" />
+
+        <TextView
+            android:id="@+id/firstName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toEndOf="@id/image2"
+            app:layout_constraintTop_toTopOf="@id/image2" />
+
+        <TextView
+            android:id="@+id/lastName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/image2"
+            app:layout_constraintTop_toBottomOf="@id/firstName2" />
+
+        <TextView
+            android:id="@+id/id2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/image2"
+            app:layout_constraintTop_toBottomOf="@id/lastName2" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image2" />
+
+        <TextView
+            android:id="@+id/firstName3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toEndOf="@id/image3"
+            app:layout_constraintTop_toTopOf="@id/image3" />
+
+        <TextView
+            android:id="@+id/lastName3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/image3"
+            app:layout_constraintTop_toBottomOf="@id/firstName3" />
+
+        <TextView
+            android:id="@+id/id3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/image3"
+            app:layout_constraintTop_toBottomOf="@id/lastName3" />
+
+
+
+
+
+        <TextView
+            android:id="@+id/page"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image3"/>
+        <TextView
+            android:id="@+id/per_page"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/page"/>
+        <TextView
+            android:id="@+id/total_page"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/per_page"/>
+        <TextView
+            android:id="@+id/total"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/total_page"/>
+    </android.support.constraint.ConstraintLayout>
+</layout>

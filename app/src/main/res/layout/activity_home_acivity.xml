@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.roshaan.retrofitsample.ui.HomeAcivity">
+
+    <Button
+        android:id="@+id/singleUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:layout_marginStart="132dp"
+        android:text="Single User"
+        android:onClick="singleUser"
+        app:layout_constraintBottom_toTopOf="@+id/userList"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/userList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User lists with paramters"
+        android:onClick="usersList"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/singleUser"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/imageUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User lists with paramters"
+        android:layout_marginTop="50dp"
+        android:onClick="imageUpload"
+        app:layout_constraintTop_toBottomOf="@id/userList"
+        app:layout_constraintStart_toStartOf="@+id/singleUser"
+         />
+</android.support.constraint.ConstraintLayout>
